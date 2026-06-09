@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My GitHub Website</title>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background: #4b6cb7;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      transition: 0.4s ease;
+    }
+
+    header:hover {
+      background: #182848;
+    }
+
+    h1 {
+      font-size: 42px;
+    }
+
+    h2 {
+      font-size: 32px;
+      color: #4b6cb7;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    nav {
+      background: #222;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      display: inline-block;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      background: #4b6cb7;
+      border-radius: 6px;
+    }
+
+    .dropdown {
+      display: inline-block;
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background: white;
+      min-width: 180px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      border-radius: 8px;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background: #e9eefc;
+      color: #4b6cb7;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      margin-top: 25px;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      background: #222;
+      color: white;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Welcome to My Website</h1>
+    <h3>A simple GitHub Pages website</h3>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+
+    <div class="dropdown">
+      <a href="#">Resources ▼</a>
+      <div class="dropdown-content">
+        <a href="resources.html">Resources Home</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home">
+    <h2>Home</h2>
+    <h3>Starting Point</h3>
+    <p>This is the homepage of the website. You can customize this section with your own text, images, and links.</p>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <h3>Who We Are</h3>
+    <p>This section can explain the purpose of your website and what visitors can find here.</p>
+  </section>
+
+  <section id="resources">
+    <h2>Resources</h2>
+    <h3>Helpful Pages</h3>
+    <p>Use the dropdown menu above to visit different resource pages.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 My Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
