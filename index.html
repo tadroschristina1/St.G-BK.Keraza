@@ -1,312 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mahragan El-Keraza | St. George COC</title>
-
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f8f6f1;
-      color: #2c2c2c;
-    }
-
-    header {
-      min-height: 90vh;
-      background: linear-gradient(rgba(20, 35, 70, 0.75), rgba(20, 35, 70, 0.75)),
-                  url("https://images.unsplash.com/photo-1528357136257-0c25517acfea?auto=format&fit=crop&w=1600&q=80");
-      background-size: cover;
-      background-position: center;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 30px;
-    }
-
-    .hero {
-      max-width: 900px;
-      animation: fadeUp 1.2s ease;
-    }
-
-    .hero h1 {
-      font-size: 55px;
-      margin-bottom: 10px;
-    }
-
-    .hero h2 {
-      font-size: 30px;
-      color: #f7d774;
-    }
-
-    .hero p {
-      font-size: 20px;
-      line-height: 1.6;
-    }
-
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: #142346;
-      text-align: center;
-      padding: 12px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 12px 18px;
-      display: inline-block;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      background: #f7d774;
-      color: #142346;
-      border-radius: 8px;
-    }
-
-    .dropdown {
-      display: inline-block;
-      position: relative;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background: white;
-      min-width: 190px;
-      box-shadow: 0 8px 18px rgba(0,0,0,0.2);
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .dropdown-content a {
-      color: #142346;
-      display: block;
-      text-align: left;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-      animation: fadeIn 0.3s ease;
-    }
-
-    section {
-      max-width: 1000px;
-      margin: 35px auto;
-      padding: 45px 25px;
-      background: white;
-      border-radius: 18px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-      transition: 0.3s ease;
-    }
-
-    section:hover {
-      transform: translateY(-5px);
-    }
-
-    h2 {
-      font-size: 36px;
-      color: #142346;
-    }
-
-    h3 {
-      font-size: 25px;
-      color: #b28b00;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #f8f6f1;
-      padding: 25px;
-      border-radius: 15px;
-      transition: 0.3s;
-      border-left: 5px solid #f7d774;
-    }
-
-    .card:hover {
-      transform: scale(1.04);
-      background: #fff8d9;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 15px;
-      background: #f7d774;
-      color: #142346;
-      padding: 12px 22px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .button:hover {
-      background: #142346;
-      color: white;
-    }
-
-    footer {
-      text-align: center;
-      background: #142346;
-      color: white;
-      padding: 25px;
-      margin-top: 40px;
-    }
-
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(35px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(8px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 38px;
-      }
-
-      .hero h2 {
-        font-size: 23px;
-      }
-
-      nav a {
-        display: block;
-      }
-
-      .dropdown-content {
-        position: static;
-      }
-    }
-  </style>
+  <title>Mahragan El-Keraza</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <nav>
-    <a href="#home">Home</a>
+<nav>
+  <div class="logo">✥ St. George <span>Coptic Orthodox Church</span></div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
     <a href="#theme">Theme</a>
     <a href="#goals">Goals</a>
     <a href="#info">Event Info</a>
 
     <div class="dropdown">
-      <a href="#">Resources ▼</a>
+      <a href="#">Resources ▾</a>
       <div class="dropdown-content">
         <a href="resources.html">Resources Home</a>
-        <a href="lessons.html">Lessons</a>
+        <a href="books-materials.html">Books and Materials</a>
         <a href="schedule.html">Schedule</a>
         <a href="registration.html">Registration</a>
         <a href="contact.html">Contact</a>
       </div>
     </div>
-  </nav>
 
-  <header id="home">
-    <div class="hero">
-      <h1>Mahragan El-Keraza</h1>
-      <h2>St. George Coptic Orthodox Church</h2>
-      <p>
-        “No, in all these things we are more than conquerors through Him who loved us.”
-        <br />
-        <strong>Romans 8:37</strong>
-      </p>
-      <a href="#info" class="button">Learn More</a>
+    <a href="registration.html" class="register-btn">Register Now</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-text">
+    <h1>Mahragan<br>El-Keraza</h1>
+    <p>“No, in all these things we are more than conquerors through Him who loved us.”</p>
+    <h3>Romans 8:37</h3>
+    <a href="#goals" class="button">Learn More</a>
+  </div>
+</header>
+
+<section id="theme">
+  <h2>Theme: More Than Conquerors</h2>
+  <p>This year’s theme reminds us that through Christ’s love, we are strengthened, encouraged, and victorious.</p>
+</section>
+
+<section id="goals">
+  <h2>Our Goals</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>01. Encourage</h3>
+      <p>Encourage community and unity among Coptic Orthodox children and youth.</p>
     </div>
-  </header>
-
-  <section id="theme">
-    <h2>This Year’s Theme</h2>
-    <h3>More Than Conquerors</h3>
-    <p>
-      This year’s Mahragan theme reminds us that through Christ’s love,
-      we are strengthened, encouraged, and victorious in every challenge.
-    </p>
-  </section>
-
-  <section id="goals">
-    <h2>Our Goals</h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3>01. Encourage</h3>
-        <p>
-          Encourage community and unity among Coptic Orthodox Churches,
-          especially among children and youth.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>02. Motivate</h3>
-        <p>
-          Motivate our youth to gain spiritual benefits and excel in
-          their spiritual interest domains.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>03. Nurture</h3>
-        <p>
-          Identify, nurture, and further develop leadership skills in
-          our Coptic youth.
-        </p>
-      </div>
+    <div class="card">
+      <h3>02. Motivate</h3>
+      <p>Motivate youth to gain spiritual benefits and excel in their talents.</p>
     </div>
-  </section>
+    <div class="card">
+      <h3>03. Nurture</h3>
+      <p>Identify, nurture, and develop leadership skills in Coptic youth.</p>
+    </div>
+  </div>
+</section>
 
-  <section id="info">
-    <h2>Event Information</h2>
-    <h3>Welcome to Mahragan El-Keraza</h3>
-    <p>
-      Join us for a blessed event filled with learning, fellowship,
-      spiritual growth, activities, and community.
-    </p>
+<section id="info">
+  <h2>Event Info</h2>
+  <p>Join us for learning, fellowship, spiritual growth, activities, and community.</p>
+  <a href="registration.html" class="button">Register Now</a>
+</section>
 
-    <a href="registration.html" class="button">Register Now</a>
-    <a href="schedule.html" class="button">View Schedule</a>
-  </section>
-
-  <section>
-    <h2>Resources</h2>
-    <h3>Helpful Pages</h3>
-    <p>
-      Use the Resources dropdown menu to access lessons, schedules,
-      registration information, and contact details.
-    </p>
-  </section>
-
-  <footer>
-    <p>St. George Coptic Orthodox Church | Brooklyn, NY</p>
-    <p>&copy; 2026 Mahragan El-Keraza</p>
-  </footer>
+<footer>
+  <p>St. George Coptic Orthodox Church | Brooklyn, NY</p>
+  <p>Mahragan El-Keraza • Romans 8:37</p>
+</footer>
 
 </body>
 </html>
