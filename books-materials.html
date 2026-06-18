@@ -1,61 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Books and Materials</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<nav class="navbar">
+  <a class="brand" href="index.html">
+    <div class="cross-logo">✥</div>
+    <div>
+      <div class="brand-title">St. George</div>
+      <div class="brand-subtitle">Coptic Orthodox Church</div>
+    </div>
+  </a>
 
-<nav>
-  <div class="logo">✥ St. George <span>Coptic Orthodox Church</span></div>
   <div class="nav-links">
     <a href="index.html">Home</a>
-    <a href="resources.html">Resources</a>
-    <a href="schedule.html">Schedule</a>
-    <a href="registration.html">Registration</a>
+    <a href="index.html#theme">Theme</a>
+    <a href="index.html#goals">Goals</a>
+    <a href="index.html#info">Event Info</a>
+
+    <div class="dropdown">
+      <a href="#">Resources⌄</a>
+      <div class="dropdown-menu">
+        <a href="resources.html">Resources Home</a>
+        <a href="books-materials.html">Books and Materials</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="registration.html">Registration</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+
+    <a class="register-top" href="registration.html">Register Now</a>
   </div>
 </nav>
-
-<div class="page-header">
+<header class="page-hero">
   <h1>Books and Materials</h1>
-  <p>Helpful books, guides, and materials to strengthen your faith.</p>
-</div>
+  <p>Helpful books, guides, and materials to strengthen your faith and walk with Christ.</p>
+</header>
 
-<section>
-  <div class="material">
-    <div>
-      <h3>Bible Study Guide</h3>
-      <p>A guide to help you dive deeper into God’s Word.</p>
+<section class="section">
+  <div class="material-wrap">
+    <div class="material">
+      <div class="pdf-icon">PDF</div>
+      <div>
+        <h3>Bible Study Guide</h3>
+        <p>A comprehensive guide to help you dive deeper into God’s Word.</p>
+      </div>
+      <a class="btn" href="docs/Bible_Study_Guide.pdf" download>Download PDF</a>
     </div>
-    <a href="docs/Bible_Study_Guide.pdf" class="button" download>Download PDF</a>
-  </div>
 
-  <div class="material">
-    <div>
-      <h3>Spiritual Growth</h3>
-      <p>Reflections for growing closer to Christ.</p>
+    <div class="material">
+      <div class="pdf-icon">PDF</div>
+      <div>
+        <h3>Spiritual Growth</h3>
+        <p>Practical steps and reflections for growing closer to Christ.</p>
+      </div>
+      <a class="btn" href="docs/Spiritual_Growth.pdf" download>Download PDF</a>
     </div>
-    <a href="docs/Spiritual_Growth.pdf" class="button" download>Download PDF</a>
-  </div>
 
-  <div class="material">
-    <div>
-      <h3>Youth Leadership</h3>
-      <p>Resources to develop leadership in our youth.</p>
+    <div class="material">
+      <div class="pdf-icon">PDF</div>
+      <div>
+        <h3>Youth Leadership</h3>
+        <p>Resources and tips for developing leadership in our youth.</p>
+      </div>
+      <a class="btn" href="docs/Youth_Leadership.pdf" download>Download PDF</a>
     </div>
-    <a href="docs/Youth_Leadership.pdf" class="button" download>Download PDF</a>
-  </div>
 
-  <div class="material">
-    <div>
-      <h3>Daily Devotions</h3>
-      <p>Daily reflections and prayers.</p>
+    <div class="material">
+      <div class="pdf-icon">PDF</div>
+      <div>
+        <h3>Daily Devotions</h3>
+        <p>Daily devotionals to inspire and encourage your spiritual journey.</p>
+      </div>
+      <a class="btn" href="docs/Daily_Devotions.pdf" download>Download PDF</a>
     </div>
-    <a href="docs/Daily_Devotions.pdf" class="button" download>Download PDF</a>
   </div>
 </section>
-
-<footer>Books and Materials | Mahragan El-Keraza</footer>
-
+<footer class="footer">
+  <div>✥ St. George Coptic Orthodox Church<br>Brooklyn, NY</div>
+  <div><span class="gold">Mahragan El-Keraza</span><br>Romans 8:37</div>
+  <div>© 2026 All Rights Reserved</div>
+</footer>
+<div class="bottom-theme">✥ THEME: MORE THAN CONQUERORS • ROMANS 8:37 ✥</div>
 </body>
 </html>
